@@ -46,6 +46,7 @@ remote_repo="https://x-access-token:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITOR
 git config http.sslVerify false
 git config --local user.email "${INPUT_AUTHOR_EMAIL}"
 git config --local user.name "${INPUT_AUTHOR_NAME}"
+git config --local user.password ${INPUT_GITHUB_TOKEN}
 
 git add -A
 
